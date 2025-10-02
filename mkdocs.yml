@@ -1,0 +1,61 @@
+
+# --- Información General del Sitio ---
+site_name: 'Aritz Basarrate | Portfolio Profesional'
+site_author: 'Aritz Basarrate'
+site_url: https://aritz-basarrate.github.io
+
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - header.autohide
+  palette:
+    # Esta configuración activa el selector de tema claro/oscuro (RECOMENDADO)
+    # Modo Claro (por defecto)
+    - scheme: default
+      primary: indigo # Color principal en modo claro
+      accent: blue    # Color de acento en modo claro
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+
+    # Modo Oscuro
+    - scheme: slate
+      primary: black  # Color principal en modo oscuro
+      accent: blue    # Color de acento en modo oscuro
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+
+
+# Estos son los datos que me has proporcionado.
+repo_url: https://github.com/aritz-basarrate/aritz-basarrate.github.io
+repo_name: GitHub
+
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/aritz-basarrate  
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/tu-usuario/ 
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:tu-email@dominio.com           
+
+
+nav:
+  - Inicio: index.md
+  - Sobre Mí: sobre-mi.md
+  - Proyectos: proyectos.md
+  - Contacto: contacto.md
